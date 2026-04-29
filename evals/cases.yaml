@@ -1,0 +1,31 @@
+# 评估用例集（v1.0 起步 · 至少 3 例 · 建议 10+）
+#
+# 每个用例描述输入 + 预期输出关键字，CI 跑 Claude Code 自动验证
+
+cases:
+  - name: happy-path-1
+    skill: /tyc-<skill-name>
+    input:
+      searchKey: "北京百度网讯科技有限公司"
+    expect:
+      - "百度"
+      - "统一社会信用代码"
+    notes: "大厂基础核验，主路径"
+
+  - name: happy-path-2
+    skill: /tyc-<skill-name>
+    input:
+      searchKey: "宁德时代新能源科技股份有限公司"
+    expect:
+      - "宁德时代"
+    notes: "上市公司核验"
+
+  - name: empty-result
+    skill: /tyc-<skill-name>
+    input:
+      searchKey: "一个不存在的公司名字 XYZ"
+    expect:
+      - "_empty"
+    notes: "空结果归一化，不报错"
+
+  # TODO: 按仓补齐 7+ 个场景用例（failure / edge-case / multi-source）

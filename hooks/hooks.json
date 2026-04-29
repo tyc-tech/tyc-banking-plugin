@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__tyc__.*kyb.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '🏦 [TYC Banking KYB Hook] 正在调用 TYC MCP · 合规记录已启用' >&2"
+          }
+        ]
+      }
+    ]
+  }
+}
