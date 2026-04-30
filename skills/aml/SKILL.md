@@ -32,7 +32,6 @@ version: 1.0
 ### Step 3: PEP 与黑名单筛查
 - `get_key_personnel` — 主要人员列表
 - `get_dishonest_info` — 失信被执行
-- `get_disciplinary_list` — 惩戒名单
 
 ### Step 4: 跨境贸易合规
 - `get_import_export_credit` — 海关信用等级
@@ -66,7 +65,6 @@ version: 1.0
 ## 四、PEP 与制裁筛查
 - 法定代表人 PEP 标记: 是/否
 - 主要人员失信记录: {n} 条
-- 惩戒名单命中: {n} 条
 
 ## 五、跨境业务合规
 - 海关信用等级: {creditLevel}

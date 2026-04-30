@@ -30,7 +30,6 @@ version: 1.0
 
 ### Step 3: 制裁与失信
 - `get_dishonest_info` — 失信
-- `get_disciplinary_list` — 惩戒名单（含部分制裁信息）
 - `get_administrative_penalty` — 海关/外汇类处罚
 
 ### Step 4: 风险综合
