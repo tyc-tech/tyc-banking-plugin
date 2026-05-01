@@ -145,7 +145,7 @@ if config_path.exists():
 
 existing.setdefault("mcpServers", {})
 existing["mcpServers"]["tyc"] = {
-    "url": "https://ai-mcp.tianyancha.com/mcp",
+    "url": "https://mcp.tianyancha.com/v1",
     "headers": {
         "Authorization": "Bearer \${TYC_MCP_API_KEY}"
     }
@@ -160,7 +160,7 @@ PYEOF
 {
   "mcpServers": {
     "tyc": {
-      "url": "https://ai-mcp.tianyancha.com/mcp",
+      "url": "https://mcp.tianyancha.com/v1",
       "headers": {
         "Authorization": "${TYC_MCP_API_KEY}"
       }
@@ -174,7 +174,7 @@ else
 {
   "mcpServers": {
     "tyc": {
-      "url": "https://ai-mcp.tianyancha.com/mcp",
+      "url": "https://mcp.tianyancha.com/v1",
       "headers": {
         "Authorization": "${TYC_MCP_API_KEY}"
       }

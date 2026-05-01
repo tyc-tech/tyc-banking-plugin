@@ -16,7 +16,7 @@ if (-not $env:TYC_MCP_API_KEY) {
 Write-Host ""
 Write-Host "→ 测试 TYC MCP 连通性..."
 try {
-    $response = Invoke-WebRequest -Uri "https://mcp.tianyancha.com/mcp/stream" `
+    $response = Invoke-WebRequest -Uri "https://mcp.tianyancha.com/v1" `
         -Headers @{ "Authorization" = "Bearer $env:TYC_MCP_API_KEY" } `
         -Method Head -UseBasicParsing -ErrorAction Stop
     Write-Host "   HTTP 状态: $($response.StatusCode)"

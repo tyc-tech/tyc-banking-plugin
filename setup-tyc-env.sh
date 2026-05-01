@@ -17,4 +17,4 @@ echo ""
 echo "→ 测试 TYC MCP 连通性..."
 curl -s -o /dev/null -w "   HTTP 状态: %{http_code}\n" \
   -H "Authorization: $TYC_MCP_API_KEY" \
-  "https://ai-mcp.tianyancha.com/mcp" || echo "   ⚠️  连接异常，检查 API Key 与网络"
+  "https://mcp.tianyancha.com/v1" || echo "   ⚠️  连接异常，检查 API Key 与网络"

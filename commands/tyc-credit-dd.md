@@ -22,7 +22,7 @@ argument-hint: "<企业名称或统一社会信用代码>"
 
 ## 底层 MCP 调用
 
-通过 `tyc` MCP server（`https://ai-mcp.tianyancha.com/mcp`）调用 T1.1 业务语义聚合层工具。
+通过 `tyc` MCP server（`https://mcp.tianyancha.com/v1`）调用 T1.1 业务语义聚合层工具。
 
 ## 相关命令
 
