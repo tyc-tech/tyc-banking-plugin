@@ -2,7 +2,7 @@
 
 ## Step 1: 申请 API Key
 
-访问 [天眼查智能体数据平台](https://agent.tianyancha.com)，注册并申请 API Key。
+访问 [天眼查智能体数据平台](https://ai.tianyancha.com)，注册并申请 API Key。
 
 ## Step 2: 配置环境变量
 

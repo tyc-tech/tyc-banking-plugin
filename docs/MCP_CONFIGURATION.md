@@ -14,7 +14,7 @@ https://mcp.tianyancha.com/v1
 
 所有请求需携带 `Authorization: ${TYC_MCP_API_KEY}` 请求头。
 
-API Key 从 [天眼查智能体数据平台](https://agent.tianyancha.com) 申请。
+API Key 从 [天眼查智能体数据平台](https://ai.tianyancha.com) 申请。
 
 ## 3. `.mcp.json` 配置
 
@@ -93,6 +93,6 @@ claude --help
 
 ## 9. 相关参考
 
-- [天眼查智能体数据平台](https://agent.tianyancha.com)
+- [天眼查智能体数据平台](https://ai.tianyancha.com)
 - [MCP 协议规范](https://modelcontextprotocol.io)
 - [本仓 README](../README.md)

@@ -3,7 +3,7 @@
 > **银行合规风控 AI SKILL 集** — 天眼查 OpenAPI + MCP 协议驱动的 8 个银行向业务 SKILL
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
-[![MCP](https://img.shields.io/badge/MCP-TYC%20天眼查-orange.svg)](https://agent.tianyancha.com)
+[![MCP](https://img.shields.io/badge/MCP-TYC%20天眼查-orange.svg)](https://ai.tianyancha.com)
 [![Claude](https://img.shields.io/badge/Claude%20Code-Compatible-purple.svg)](https://claude.ai)
 
 ---
@@ -51,15 +51,15 @@
 ### 方式 A · bash 一键脚本（推荐 · 30 秒搞定）
 
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/tyc-opensource/tyc-banking-plugin/main/install_tyc_mcp.sh)
+bash <(curl -sL https://raw.githubusercontent.com/tyc-tech/tyc-banking-plugin/main/install_tyc_mcp.sh)
 ```
 
-脚本会：① 提示输入 `TYC_MCP_API_KEY`（[申请](https://agent.tianyancha.com)）→ ② 自动写入 `~/.claude/.mcp.json` → ③ 复制 SKILL 到 `~/.claude/skills/tyc-*` → ④ 复制命令到 `~/.claude/commands/`。完成后**重启 Claude Code** 即可使用。
+脚本会：① 提示输入 `TYC_MCP_API_KEY`（[申请](https://ai.tianyancha.com)）→ ② 自动写入 `~/.claude/.mcp.json` → ③ 复制 SKILL 到 `~/.claude/skills/tyc-*` → ④ 复制命令到 `~/.claude/commands/`。完成后**重启 Claude Code** 即可使用。
 
 ### 方式 B · 本地 plugin-dir（开发 / 调试）
 
 ```bash
-git clone https://github.com/tyc-opensource/tyc-banking-plugin.git
+git clone https://github.com/tyc-tech/tyc-banking-plugin.git
 cd tyc-banking-plugin
 export TYC_MCP_API_KEY="your_api_key_here"
 claude --plugin-dir .
@@ -160,7 +160,7 @@ Claude: 输出信号等级（🔴 / 🟡 / 🔵）+ 建议动作（展期 / 催�
 
 | 配置项 | 默认值 | 说明 |
 |--------|--------|------|
-| `TYC_MCP_API_KEY` | — | 必填，从 `agent.tianyancha.com` 申请 |
+| `TYC_MCP_API_KEY` | — | 必填，从 `ai.tianyancha.com` 申请 |
 | MCP endpoint | `https://mcp.tianyancha.com/v1` | 公网托管，无需自部署 |
 | 输出格式 | Markdown | Claude Code 自动渲染 |
 
@@ -176,7 +176,7 @@ Windows 用户参考：`.\setup-tyc-env.ps1`
 A: 不需要。TYC MCP Server 已公网托管（`mcp.tianyancha.com`）。
 
 **Q: API Key 怎么收费？**
-A: 从 [agent.tianyancha.com](https://agent.tianyancha.com) 申请，有免费额度和付费套餐。
+A: 从 [ai.tianyancha.com](https://ai.tianyancha.com) 申请，有免费额度和付费套餐。
 
 **Q: 能否修改 SKILL？**
 A: Apache-2.0 License 允许二次开发，PR 欢迎。
@@ -210,6 +210,6 @@ Apache-2.0 · 见 [LICENSE](LICENSE)
 
 ## 12. 联系我们
 
-- Issues: https://github.com/tyc-opensource/tyc-banking-plugin/issues
-- API 申请：https://agent.tianyancha.com
+- Issues: https://github.com/tyc-tech/tyc-banking-plugin/issues
+- API 申请：https://ai.tianyancha.com
 - 商务合作：contact@tianyancha.com

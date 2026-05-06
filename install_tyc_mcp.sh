@@ -3,7 +3,7 @@
 #
 # 用法 / Usage:
 #   curl 模式（推荐） / curl mode (recommended):
-#     bash <(curl -sL https://raw.githubusercontent.com/tyc-opensource/tyc-banking-plugin/main/install_tyc_mcp.sh)
+#     bash <(curl -sL https://raw.githubusercontent.com/tyc-tech/tyc-banking-plugin/main/install_tyc_mcp.sh)
 #
 #   本地模式 / local mode:
 #     bash install_tyc_mcp.sh
@@ -24,7 +24,7 @@ BLUE='\033[0;34m'
 NC='\033[0m'
 
 REPO_NAME="tyc-banking-plugin"
-REPO_OWNER="tyc-opensource"
+REPO_OWNER="tyc-tech"
 REPO_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}"
 TARBALL_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}/archive/refs/heads/main.tar.gz"
 
@@ -87,7 +87,7 @@ echo "=========================================="
 if [ -z "$TYC_MCP_API_KEY" ]; then
     echo -e "${YELLOW}⚠️  环境变量 TYC_MCP_API_KEY 未设置${NC}"
     echo ""
-    echo "API Key 申请: https://agent.tianyancha.com"
+    echo "API Key 申请: https://ai.tianyancha.com"
     echo ""
     echo "选项："
     echo "  1) 现在输入 / Enter now"
@@ -269,7 +269,7 @@ echo "     source $SHELL_RC"
 echo "3. 重启 Claude Code 后试用："
 echo "     /tyc-<command>"
 echo ""
-echo "申请 API Key：https://agent.tianyancha.com"
+echo "申请 API Key：https://ai.tianyancha.com"
 echo "项目主页：$REPO_URL"
 echo ""
 echo -e "${GREEN}🎉 安装完成 / Installation complete!${NC}"
